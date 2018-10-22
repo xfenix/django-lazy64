@@ -34,4 +34,4 @@ def do_shide(parser, token):
 def post_shide():
     """ This is just minified version of repo root file unhide.js
     """
-    return """<script>(function(){'use strict';let $blocks=document.querySelectorAll('.{}');$blocks.forEach(function($oneBlock){$oneBlock.innerHTML=window.atob(localStorage.getItem($oneBlock.getAttribute('id')))})})();</script>""".format(CSS_CLASS)
+    return """<script>(function(){'use strict';let $blocks=document.querySelectorAll('.{css_name}');$blocks.forEach(function($oneBlock){$oneBlock.innerHTML=window.atob(localStorage.getItem($oneBlock.getAttribute('id')))})})();</script>""".format(css_name=CSS_CLASS)
