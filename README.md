@@ -22,9 +22,11 @@ Really simple: template tags wraps around you content and turns it into base64 t
 This is not a fast working solution (because DOM manipulations are slow), and if you use it against you menu, header or another big, top parts of you site, you can get the "kangaroo" effect, when you site just jumping in the each site reload.
 So, i beg you - do not use it for so. Just hide small, but vital parts.
 
-Examples
+Usage
 ---
-SOON
+1. Import tag library `{% load searchhide %}`
+2. Wrap desired html block in tags like this `{% do_shide %}HTML code{% enddo_shide %}`
+3. Add `{% post_shide %}` tag call in the end of you html layout (before </body>)
 
 Caching
 ---
